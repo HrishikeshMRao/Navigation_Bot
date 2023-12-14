@@ -1,0 +1,1 @@
+/home/fiend/Navigation_Bot/dev_ws/src/launch/launch_sim.launch.py
