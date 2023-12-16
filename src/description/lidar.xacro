@@ -31,15 +31,14 @@
         <material>Gazebo/Red</material>
 
         <sensor name="laser" type="ray">
-            <pose> 0 0 0 0 0 0 </pose>
             <visualize>false</visualize>
             <update_rate>10</update_rate>
             <ray>
                 <scan>
                     <horizontal>
                         <samples>360</samples>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
+                        <min_angle>0</min_angle>
+                        <max_angle>${2*pi}</max_angle>
                     </horizontal>
                 </scan>
                 <range>
@@ -53,7 +52,7 @@
                 </ros>
                 <output_type>sensor_msgs/LaserScan</output_type>
                 <frame_name>laser_frame</frame_name>
-            </plugin>
+            </plugin> 
         </sensor>
     </gazebo>
 
