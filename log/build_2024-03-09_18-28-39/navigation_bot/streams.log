@@ -1,0 +1,74 @@
+[0.411s] Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]16s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8
+[0.484s] [35m[1mConsolidate compiler generated dependencies of target Motor_Driver_Node[0m
+[0.513s] [ 50%] Built target ImageCapture
+[0.522s] [ 75%] [32mBuilding CXX object CMakeFiles/Motor_Driver_Node.dir/Executables/follower.cpp.o[0m
+[7.149s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.150s]                  from [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:1[m[K:
+[7.150s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:[m[K In member function ‘[01m[Kvoid follower::contourCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.150s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:41:45:[m[K [35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[7.151s]    41 |         RCLCPP_INFO_ONCE(this->get_logger(),[35m[K"Image Encoding: %s\n"[m[K, cv_ptr->encoding);
+[7.151s]       |                                             [35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.151s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:41:63:[m[K [36m[Knote: [m[Kformat string is defined here
+[7.151s]    41 |         RCLCPP_INFO_ONCE(this->get_logger(),"Image Encoding: [36m[K%s[m[K\n", cv_ptr->encoding);
+[7.151s]       |                                                              [36m[K~^[m[K
+[7.151s]       |                                                               [36m[K|[m[K
+[7.151s]       |                                                               [36m[Kchar*[m[K
+[20.713s] [100%] [32m[1mLinking CXX executable Motor_Driver_Node[0m
+[21.708s] [100%] Built target Motor_Driver_Node
+[21.728s] Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]16s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8
+[21.791s] Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]16s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --install /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot
+[21.802s] -- Install configuration: ""
+[21.803s] -- Execute custom install script
+[21.804s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/config/empty.yaml
+[21.804s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/config/my_controller.yaml
+[21.805s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/Depth_camera.xacro
+[21.805s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/camera.xacro
+[21.805s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/gazebo_control.xacro
+[21.806s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/inertial_macros.xacro
+[21.806s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/lidar.xacro
+[21.807s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/robot.urdf.xacro
+[21.807s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/robot_core.xacro
+[21.807s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/ros2_control.xacro
+[21.807s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/launch/launch_sim.launch.py
+[21.807s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/launch/rsp.launch.py
+[21.808s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/empty.world
+[21.808s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/home.world
+[21.808s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/obstacle.world
+[21.809s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/track.world
+[21.809s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/turtleWorld.world
+[21.809s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/navigation_bot/ImageCapture
+[21.810s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/navigation_bot/Motor_Driver_Node
+[21.810s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/package_run_dependencies/navigation_bot
+[21.810s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/parent_prefix_path/navigation_bot
+[21.811s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/ament_prefix_path.sh
+[21.811s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/ament_prefix_path.dsv
+[21.811s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/path.sh
+[21.811s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/path.dsv
+[21.812s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.bash
+[21.812s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.sh
+[21.812s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.zsh
+[21.813s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.dsv
+[21.813s] -- Symlinking: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.dsv
+[21.829s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/packages/navigation_bot
+[21.829s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/cmake/navigation_botConfig.cmake
+[21.829s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/cmake/navigation_botConfig-version.cmake
+[21.829s] -- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.xml
+[21.833s] Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]16s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --install /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot

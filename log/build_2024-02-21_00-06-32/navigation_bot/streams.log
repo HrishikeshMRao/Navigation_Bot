@@ -1,0 +1,62 @@
+[0.198s] Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fiend/cv_bridge/install/opencv_tests:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake /home/fiend/Navigation_Bot/dev_ws/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot
+[0.295s] -- The C compiler identification is GNU 11.4.0
+[0.398s] -- The CXX compiler identification is GNU 11.4.0
+[0.412s] -- Detecting C compiler ABI info
+[0.534s] -- Detecting C compiler ABI info - done
+[0.551s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.551s] -- Detecting C compile features
+[0.552s] -- Detecting C compile features - done
+[0.558s] -- Detecting CXX compiler ABI info
+[0.699s] -- Detecting CXX compiler ABI info - done
+[0.717s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.717s] -- Detecting CXX compile features
+[0.718s] -- Detecting CXX compile features - done
+[0.729s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.090s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.224s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.386s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.396s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.415s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.446s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.493s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.653s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.658s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.867s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.921s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.017s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.036s] -- Looking for pthread.h
+[2.171s] -- Looking for pthread.h - found
+[2.172s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.302s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.305s] -- Found Threads: TRUE  
+[2.697s] -- Found cv_bridge: 3.4.0 (/usr/local/share/cv_bridge/cmake)
+[3.056s] [31mCMake Error at /usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake:79 (message):
+[3.056s]   The imported target "cv_bridge::cv_bridge" references the file
+[3.057s] 
+[3.057s]      "/usr/local/lib/libcv_bridge.so"
+[3.057s] 
+[3.057s]   but this file does not exist.  Possible reasons include:
+[3.057s] 
+[3.057s]   * The file was deleted, renamed, or moved to another location.
+[3.057s] 
+[3.058s]   * An install or uninstall procedure did not complete successfully.
+[3.058s] 
+[3.058s]   * The installation package was faulty and contained
+[3.058s] 
+[3.058s]      "/usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake"
+[3.058s] 
+[3.059s]   but not all the files it references.
+[3.059s] 
+[3.059s] Call Stack (most recent call first):
+[3.059s]   /usr/local/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake:9 (include)
+[3.059s]   /usr/local/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)
+[3.059s]   CMakeLists.txt:20 (find_package)
+[3.059s] 
+[3.059s] [0m
+[3.060s] -- Configuring incomplete, errors occurred!
+[3.060s] See also "/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/CMakeOutput.log".
+[3.073s] Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fiend/cv_bridge/install/opencv_tests:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake /home/fiend/Navigation_Bot/dev_ws/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot

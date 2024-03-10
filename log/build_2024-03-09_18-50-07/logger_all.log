@@ -1,0 +1,138 @@
+[4.209s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.209s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f45277390f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f45278d2d70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f45278d2d70>>, mixin_verb=('build',))
+[4.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.752s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fiend/Navigation_Bot/dev_ws'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.792s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.793s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.794s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.805s] DEBUG:colcon.colcon_core.package_identification:Package 'src' with type 'ros.ament_cmake' and name 'navigation_bot'
+[4.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.806s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.222s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/fiend/Navigation_Bot/dev_ws/install
+[5.268s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/fiend/voice_grab/ros2_ws/install
+[5.328s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/fiend/LineFollowingRobot/ros_ws/install
+[5.372s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/fiend/ROS/practice_codes_ROS2/articubot_one/install
+[5.418s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 405 installed packages in /opt/ros/humble
+[5.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.735s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_args' from command line to 'None'
+[5.735s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_target' from command line to 'None'
+[5.735s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.735s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[5.735s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_clean_first' from command line to 'False'
+[5.736s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'cmake_force_configure' from command line to 'False'
+[5.736s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'ament_cmake_args' from command line to 'None'
+[5.736s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[5.736s] Level 5:colcon.colcon_core.verb:set package 'navigation_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.736s] DEBUG:colcon.colcon_core.verb:Building package 'navigation_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot', 'merge_install': False, 'path': '/home/fiend/Navigation_Bot/dev_ws/src', 'symlink_install': True, 'test_result_base': None}
+[5.778s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.823s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fiend/Navigation_Bot/dev_ws/src' with build type 'ament_cmake'
+[5.824s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fiend/Navigation_Bot/dev_ws/src'
+[5.884s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.885s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.885s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]32s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8
+[28.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]32s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8
+[28.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]32s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --install /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot
+[28.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_bot)
+[28.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]32s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --install /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot
+[28.513s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot' for CMake module files
+[28.515s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot' for CMake config files
+[28.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_bot', 'cmake_prefix_path')
+[28.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.ps1'
+[28.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.dsv'
+[28.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.sh'
+[28.566s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib'
+[28.567s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/bin'
+[28.567s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/pkgconfig/navigation_bot.pc'
+[28.568s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/python3.10/site-packages'
+[28.568s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/bin'
+[28.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.ps1'
+[28.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.dsv'
+[28.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.sh'
+[28.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.bash'
+[28.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.zsh'
+[28.621s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/colcon-core/packages/navigation_bot)
+[28.738s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_bot)
+[28.782s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot' for CMake module files
+[28.783s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot' for CMake config files
+[28.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_bot', 'cmake_prefix_path')
+[28.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.ps1'
+[28.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.dsv'
+[28.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/hook/cmake_prefix_path.sh'
+[28.838s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib'
+[28.838s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/bin'
+[28.838s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/pkgconfig/navigation_bot.pc'
+[28.839s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/python3.10/site-packages'
+[28.840s] Level 1:colcon.colcon_core.environment:checking '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/bin'
+[28.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.ps1'
+[28.901s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.dsv'
+[28.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.sh'
+[28.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.bash'
+[28.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.zsh'
+[28.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/colcon-core/packages/navigation_bot)
+[28.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.907s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.907s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.965s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.966s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.966s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.995s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.042s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fiend/Navigation_Bot/dev_ws/install/local_setup.ps1'
+[29.044s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fiend/Navigation_Bot/dev_ws/install/_local_setup_util_ps1.py'
+[29.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fiend/Navigation_Bot/dev_ws/install/setup.ps1'
+[29.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fiend/Navigation_Bot/dev_ws/install/local_setup.sh'
+[29.095s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fiend/Navigation_Bot/dev_ws/install/_local_setup_util_sh.py'
+[29.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fiend/Navigation_Bot/dev_ws/install/setup.sh'
+[29.140s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fiend/Navigation_Bot/dev_ws/install/local_setup.bash'
+[29.142s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fiend/Navigation_Bot/dev_ws/install/setup.bash'
+[29.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fiend/Navigation_Bot/dev_ws/install/local_setup.zsh'
+[29.187s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fiend/Navigation_Bot/dev_ws/install/setup.zsh'

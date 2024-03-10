@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-fb89618f6f21656bd887.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "navigation_bot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ImageCapture::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ImageCapture-Debug-7136db3ef49bc740f6b3.json",
+					"name" : "ImageCapture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cv_bridge_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cv_bridge_test-Debug-a9f61e0cbbc61f0d547c.json",
+					"name" : "cv_bridge_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_bot_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_bot_uninstall-Debug-ba2e97105c34544fcc3e.json",
+					"name" : "navigation_bot_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-4eae7e0898c11817802e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "webcam_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-webcam_publisher-Debug-f4a9df8489583637c2c1.json",
+					"name" : "webcam_publisher",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fiend/Navigation_Bot/dev_ws/build",
+		"source" : "/home/fiend/Navigation_Bot/dev_ws/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

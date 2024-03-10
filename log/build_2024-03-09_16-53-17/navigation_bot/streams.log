@@ -1,0 +1,20 @@
+[0.335s] Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]49s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8
+[0.412s] [35m[1mConsolidate compiler generated dependencies of target Motor_Driver_Node[0m
+[0.435s] [ 50%] Built target ImageCapture
+[0.449s] [ 75%] [32mBuilding CXX object CMakeFiles/Motor_Driver_Node.dir/Executables/follower.cpp.o[0m
+[6.888s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:[m[K In member function ‘[01m[Kvoid follower::contourCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.888s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:39:9:[m[K [31m[Kerror: [m[K‘[01m[KFind[m[K’ was not declared in this scope
+[6.888s]    39 |         [31m[KFind[m[K contours in the image
+[6.888s]       |         [31m[K^~~~[m[K
+[6.904s] [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/follower.cpp:41:41:[m[K [31m[Kerror: [m[K‘[01m[Kcontours[m[K’ was not declared in this scope; did you mean ‘[01m[Kcontour_msg[m[K’?
+[6.904s]    41 |         cv::findContours(cv_ptr->image, [31m[Kcontours[m[K, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+[6.904s]       |                                         [31m[K^~~~~~~~[m[K
+[6.904s]       |                                         [32m[Kcontour_msg[m[K
+[12.487s] gmake[2]: *** [CMakeFiles/Motor_Driver_Node.dir/build.make:76: CMakeFiles/Motor_Driver_Node.dir/Executables/follower.cpp.o] Error 1
+[12.488s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Motor_Driver_Node.dir/all] Error 2
+[12.488s] gmake: *** [Makefile:146: all] Error 2
+[12.492s] Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\] underwent \[[36m\]49s\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake --build /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot -- -j8 -l8

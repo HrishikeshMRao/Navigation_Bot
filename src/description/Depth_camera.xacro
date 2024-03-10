@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <joint name="camera_joint" type="fixed">
-        <parent link="chassis"/>
-        <child link="camera_link"/>
-        <origin xyz="0.305 0 0.08" rpy="0 0 0"/>
+    <joint name="Depth_camera_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="Depth_camera_link"/>
+        <origin xyz="0.31 0 0.085" rpy="0 0 0"/>
     </joint>
 
-    <link name="camera_link">
+    <link name="Depth_camera_link">
         <visual>
-            <geometry>
-                <box size="0.010 0.03 0.03"/>
+            <geometry> 
+                <box size="0.04 0.04 0.07"/>
             </geometry>
             <material name="red"/>
         </visual>
     </link>
 
 
-    <joint name="camera_optical_joint" type="fixed">
-        <parent link="camera_link"/>
-        <child link="camera_link_optical"/>
-        <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    <joint name="Depth_camera_optical_joint" type="fixed">
+        <parent link="Depth_camera_link"/>
+        <child link="Depth_camera_link_optical"/>
+        <origin xyz="0 0 -0.035" rpy="${-pi/2} 0 ${-pi/2}"/>
     </joint>
 
-    <link name="camera_link_optical"></link>
+    <link name="Depth_camera_link_optical"></link>
 
 
 
-    <gazebo reference="camera_link">
+    <gazebo reference="Depth_camera_link">
         <material>Gazebo/Red</material>
 
         <sensor name="camera" type="depth">
@@ -46,8 +46,8 @@
                     <far>8.0</far>
                 </clip>
             </camera>
-            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-                <frame_name>camera_link_optical</frame_name>
+            <plugin name="Depth_camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>Depth_camera_link_optical</frame_name>
             </plugin>
         </sensor>
     </gazebo>

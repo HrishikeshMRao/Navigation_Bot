@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (navigation_bot) JobQueued: {'identifier': 'navigation_bot', 'dependencies': OrderedDict()}
+[0.000339] (navigation_bot) JobStarted: {'identifier': 'navigation_bot'}
+[0.098497] (-) TimerEvent: {}
+[0.192980] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'cmake'}
+[0.193438] (navigation_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/fiend/Navigation_Bot/dev_ws/src', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot'], 'cwd': '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'fiend'), ('STARSHIP_SHELL', 'bash'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fiend/cv_bridge/install/image_geometry/lib:/home/fiend/cv_bridge/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fiend'), ('OLDPWD', '/home/fiend/Navigation_Bot/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\n\\[\x1b[38;5;156m\\]\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]dev_ws\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]\\[\x1b[0m\\] on \\[\x1b[38;5;162m\\]\ue0a0 \\[\x1b[0m\\]\\[\x1b[38;5;162m\\]main\\[\x1b[0m\\]\n\\[\x1b[1;38;5;166m\\]➜\\[\x1b[0m\\]'), ('MANAGERPID', '856'), ('SYSTEMD_EXEC_PID', '994'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2542'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fiend/cv_bridge/install:/home/fiend/LineFollowingRobot/ros_ws/install:/home/fiend/Navigation_Bot/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fiend'), ('JOURNAL_STREAM', '8:19302'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fiend'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/fiend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/fiend-Lenovo-Yoga-C740-14IML:@/tmp/.ICE-unix/971,unix/fiend-Lenovo-Yoga-C740-14IML:/tmp/.ICE-unix/971'), ('INVOCATION_ID', 'c29a6bdbaf90406fa62c182d41742694'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.64HKJ2'), ('LS_COLORS', 'di=34:ow=34:tw=34:fi=13:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.c=92:*.py=93:*.h=90:*.txt=94:*.doc=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.cpp=92:*.sh=92:*.html=96:*.zip=4;33:*.tar.gz=4;33:*.mp4=105:*.mp3=106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fiend/cv_bridge/install/vision_opencv:/home/fiend/cv_bridge/install/opencv_tests:/home/fiend/cv_bridge/install/image_geometry:/home/fiend/cv_bridge/install/cv_bridge:/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4a8afb79-ffc8-4084-9963-f3b7b1569458'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GCC_COLORS', 'error=31:warning=35:note=36:caret=32:locus=01:quote=01'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('STARSHIP_SESSION_KEY', '6092466923187165'), ('PYTHONPATH', '/home/fiend/cv_bridge/build/opencv_tests:/home/fiend/cv_bridge/install/opencv_tests/lib/python3.10/site-packages:/home/fiend/cv_bridge/install/image_geometry/local/lib/python3.10/dist-packages:/home/fiend/cv_bridge/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/fiend/cv_bridge/install/vision_opencv:/home/fiend/cv_bridge/install/image_geometry:/home/fiend/cv_bridge/install/cv_bridge:/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/cv_bridge/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[0.198589] (-) TimerEvent: {}
+[0.295416] (navigation_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.298706] (-) TimerEvent: {}
+[0.398523] (navigation_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.398809] (-) TimerEvent: {}
+[0.412182] (navigation_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.498967] (-) TimerEvent: {}
+[0.533897] (navigation_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.550866] (navigation_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.551338] (navigation_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.552130] (navigation_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.558068] (navigation_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599088] (-) TimerEvent: {}
+[0.699460] (navigation_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.699711] (-) TimerEvent: {}
+[0.716882] (navigation_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.717439] (navigation_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.718399] (navigation_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.728862] (navigation_bot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.799870] (-) TimerEvent: {}
+[0.900242] (-) TimerEvent: {}
+[1.000661] (-) TimerEvent: {}
+[1.090154] (navigation_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.100787] (-) TimerEvent: {}
+[1.201149] (-) TimerEvent: {}
+[1.223664] (navigation_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.301293] (-) TimerEvent: {}
+[1.386062] (navigation_bot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.396444] (navigation_bot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.401427] (-) TimerEvent: {}
+[1.414612] (navigation_bot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.445984] (navigation_bot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.493247] (navigation_bot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501553] (-) TimerEvent: {}
+[1.602021] (-) TimerEvent: {}
+[1.652891] (navigation_bot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.658418] (navigation_bot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.702146] (-) TimerEvent: {}
+[1.802634] (-) TimerEvent: {}
+[1.867054] (navigation_bot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.902753] (-) TimerEvent: {}
+[1.920802] (navigation_bot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.002901] (-) TimerEvent: {}
+[2.017132] (navigation_bot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.036214] (navigation_bot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.103025] (-) TimerEvent: {}
+[2.171484] (navigation_bot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.172282] (navigation_bot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.203180] (-) TimerEvent: {}
+[2.302649] (navigation_bot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.303259] (-) TimerEvent: {}
+[2.304773] (navigation_bot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.403389] (-) TimerEvent: {}
+[2.503751] (-) TimerEvent: {}
+[2.604121] (-) TimerEvent: {}
+[2.697314] (navigation_bot) StdoutLine: {'line': b'-- Found cv_bridge: 3.4.0 (/usr/local/share/cv_bridge/cmake)\n'}
+[2.704243] (-) TimerEvent: {}
+[2.804730] (-) TimerEvent: {}
+[2.905114] (-) TimerEvent: {}
+[3.005479] (-) TimerEvent: {}
+[3.056305] (navigation_bot) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake:79 (message):\n'}
+[3.056711] (navigation_bot) StderrLine: {'line': b'  The imported target "cv_bridge::cv_bridge" references the file\n'}
+[3.056864] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.057014] (navigation_bot) StderrLine: {'line': b'     "/usr/local/lib/libcv_bridge.so"\n'}
+[3.057155] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.057287] (navigation_bot) StderrLine: {'line': b'  but this file does not exist.  Possible reasons include:\n'}
+[3.057439] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.057572] (navigation_bot) StderrLine: {'line': b'  * The file was deleted, renamed, or moved to another location.\n'}
+[3.057705] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.057835] (navigation_bot) StderrLine: {'line': b'  * An install or uninstall procedure did not complete successfully.\n'}
+[3.057997] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.058348] (navigation_bot) StderrLine: {'line': b'  * The installation package was faulty and contained\n'}
+[3.058494] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.058624] (navigation_bot) StderrLine: {'line': b'     "/usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake"\n'}
+[3.058752] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.058874] (navigation_bot) StderrLine: {'line': b'  but not all the files it references.\n'}
+[3.058996] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.059118] (navigation_bot) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.059239] (navigation_bot) StderrLine: {'line': b'  /usr/local/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake:9 (include)\n'}
+[3.059363] (navigation_bot) StderrLine: {'line': b'  /usr/local/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)\n'}
+[3.059484] (navigation_bot) StderrLine: {'line': b'  CMakeLists.txt:20 (find_package)\n'}
+[3.059605] (navigation_bot) StderrLine: {'line': b'\n'}
+[3.059724] (navigation_bot) StderrLine: {'line': b'\x1b[0m\n'}
+[3.059845] (navigation_bot) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.059977] (navigation_bot) StdoutLine: {'line': b'See also "/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/CMakeOutput.log".\n'}
+[3.073281] (navigation_bot) CommandEnded: {'returncode': 1}
+[3.105899] (-) TimerEvent: {}
+[3.185480] (navigation_bot) JobEnded: {'identifier': 'navigation_bot', 'rc': 1}
+[3.196133] (-) EventReactorShutdown: {}

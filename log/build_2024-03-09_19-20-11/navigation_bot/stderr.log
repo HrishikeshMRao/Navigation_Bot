@@ -1,0 +1,24 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:7[m[K:
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:[m[K In member function ‘[01m[Kvoid ImageCapture::opencv_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:96:41:[m[K [35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<std::vector<cv::Point_<int> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   96 |         RCLCPP_WARN(this->get_logger(), [35m[K"Not enough contours found. %d"[m[K, [32m[Kcontours.size()[m[K );
+      |                                         [35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~[m[K
+      |                                                                                       [32m[K|[m[K
+      |                                                                                       [32m[Kstd::vector<std::vector<cv::Point_<int> > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:96:70:[m[K [36m[Knote: [m[Kformat string is defined here
+   96 |         RCLCPP_WARN(this->get_logger(), "Not enough contours found. [36m[K%d[m[K", contours.size() );
+      |                                                                     [36m[K~^[m[K
+      |                                                                      [36m[K|[m[K
+      |                                                                      [36m[Kint[m[K
+      |                                                                     [32m[K%ld[m[K

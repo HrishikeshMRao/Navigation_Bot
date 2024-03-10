@@ -1,0 +1,26 @@
+[ 83%] Built target webcam_publisher
+[ 83%] [32mBuilding CXX object CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o[0m
+[ 83%] Built target cv_bridge_test
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:[m[K In constructor ‘[01m[KImageCapture::ImageCapture()[m[K’:
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:23:9:[m[K [31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   23 |         [31m[Kpublisher_[m[K = create_publisher<
+      |         [31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:25:24:[m[K [31m[Kerror: [m[Kcall to non-‘[01m[Kconstexpr[m[K’ function ‘[01m[Kvoid cv::namedWindow(const String&, int)[m[K’
+   25 |         [31m[Kcv::namedWindow("Image", cv::WINDOW_NORMAL)[m[K;
+      |         [31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:68[m[K,
+                 from [01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:10[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/highgui.hpp:316:19:[m[K [36m[Knote: [m[K‘[01m[Kvoid cv::namedWindow(const String&, int)[m[K’ declared here
+  316 | CV_EXPORTS_W void [36m[KnamedWindow[m[K(const String& winname, int flags = WINDOW_AUTOSIZE);
+      |                   [36m[K^~~~~~~~~~~[m[K
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:23:22:[m[K [31m[Kerror: [m[Kparse error in template argument list
+   23 |         publisher_ = [31m[Kcreate_publisher<[m[K
+      |                      [31m[K^~~~~~~~~~~~~~~~~[m[K
+   24 | [31m[K        //Initialize OpenCV window[m[K
+      |         [31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [31m[K        cv::namedWindow("Image", cv::WINDOW_NORMAL)[m[K;
+      |         [31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ImageCapture.dir/build.make:76: CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/ImageCapture.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

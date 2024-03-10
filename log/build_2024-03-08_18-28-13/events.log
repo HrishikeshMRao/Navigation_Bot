@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.000133] (navigation_bot) JobQueued: {'identifier': 'navigation_bot', 'dependencies': OrderedDict()}
+[0.000705] (navigation_bot) JobStarted: {'identifier': 'navigation_bot'}
+[0.100079] (-) TimerEvent: {}
+[0.168842] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'cmake'}
+[0.169733] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'build'}
+[0.170570] (navigation_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', '--', '-j8', '-l8'], 'cwd': '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'fiend'), ('STARSHIP_SHELL', 'bash'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fiend'), ('OLDPWD', '/home/fiend/Navigation_Bot/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\n\\[\x1b[38;5;156m\\]\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]dev_ws\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]\\[\x1b[0m\\] on \\[\x1b[38;5;162m\\]\ue0a0 \\[\x1b[0m\\]\\[\x1b[38;5;162m\\]main\\[\x1b[0m\\]\n\\[\x1b[1;38;5;166m\\]➜\\[\x1b[0m\\]'), ('MANAGERPID', '876'), ('SYSTEMD_EXEC_PID', '56008'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '56868'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fiend/voice_grab/ros2_ws/install:/home/fiend/Navigation_Bot/dev_ws/install:/home/fiend/LineFollowingRobot/ros_ws/install:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fiend'), ('JOURNAL_STREAM', '8:297407'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fiend'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/fiend/.local/bin:/home/fiend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/fiend-Lenovo-Yoga-C740-14IML:@/tmp/.ICE-unix/55985,unix/fiend-Lenovo-Yoga-C740-14IML:/tmp/.ICE-unix/55985'), ('INVOCATION_ID', '9005688e639d4856b75f5533d5abdc7a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9S0ZJ2'), ('LS_COLORS', 'di=34:ow=34:tw=34:fi=13:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.c=92:*.py=93:*.h=90:*.txt=94:*.doc=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.cpp=92:*.sh=92:*.html=96:*.zip=4;33:*.tar.gz=4;33:*.mp4=105:*.mp3=106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fiend/voice_grab/ros2_ws/install/voice_grabber:/home/fiend/voice_grab/ros2_ws/install/ur_robotiq:/home/fiend/voice_grab/ros2_ws/install/ur_robotiq_description:/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:b8e71a3b-45e5-48cd-97aa-e78a3c06651e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GCC_COLORS', 'error=31:warning=35:note=36:caret=32:locus=01:quote=01'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/fiend/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('STARSHIP_SESSION_KEY', '2511229412964716'), ('PYTHONPATH', '/home/fiend/voice_grab/ros2_ws/install/voice_grabber/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/fiend/voice_grab/ros2_ws/install/voice_grabber:/home/fiend/voice_grab/ros2_ws/install/ur_robotiq:/home/fiend/voice_grab/ros2_ws/install/ur_robotiq_description:/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.200181] (-) TimerEvent: {}
+[0.273206] (navigation_bot) StdoutLine: {'line': b'[ 83%] Built target webcam_publisher\n'}
+[0.273466] (navigation_bot) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o\x1b[0m\n'}
+[0.273604] (navigation_bot) StdoutLine: {'line': b'[ 83%] Built target cv_bridge_test\n'}
+[0.300277] (-) TimerEvent: {}
+[0.400537] (-) TimerEvent: {}
+[0.500790] (-) TimerEvent: {}
+[0.601064] (-) TimerEvent: {}
+[0.701320] (-) TimerEvent: {}
+[0.801586] (-) TimerEvent: {}
+[0.901853] (-) TimerEvent: {}
+[1.002129] (-) TimerEvent: {}
+[1.102389] (-) TimerEvent: {}
+[1.202668] (-) TimerEvent: {}
+[1.302933] (-) TimerEvent: {}
+[1.403195] (-) TimerEvent: {}
+[1.503450] (-) TimerEvent: {}
+[1.603720] (-) TimerEvent: {}
+[1.704026] (-) TimerEvent: {}
+[1.804324] (-) TimerEvent: {}
+[1.904635] (-) TimerEvent: {}
+[2.004939] (-) TimerEvent: {}
+[2.105251] (-) TimerEvent: {}
+[2.205562] (-) TimerEvent: {}
+[2.305873] (-) TimerEvent: {}
+[2.406299] (-) TimerEvent: {}
+[2.506617] (-) TimerEvent: {}
+[2.606946] (-) TimerEvent: {}
+[2.707266] (-) TimerEvent: {}
+[2.807582] (-) TimerEvent: {}
+[2.907910] (-) TimerEvent: {}
+[3.008206] (-) TimerEvent: {}
+[3.108933] (-) TimerEvent: {}
+[3.209254] (-) TimerEvent: {}
+[3.309524] (-) TimerEvent: {}
+[3.409790] (-) TimerEvent: {}
+[3.510023] (-) TimerEvent: {}
+[3.610290] (-) TimerEvent: {}
+[3.710569] (-) TimerEvent: {}
+[3.810865] (-) TimerEvent: {}
+[3.902725] (navigation_bot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImageCapture::ImageCapture()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.903048] (navigation_bot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:23:9:\x1b[m\x1b[K \x1b[31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.903132] (navigation_bot) StderrLine: {'line': b'   23 |         \x1b[31m\x1b[Kpublisher_\x1b[m\x1b[K = create_publisher<\n'}
+[3.903201] (navigation_bot) StderrLine: {'line': b'      |         \x1b[31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.903267] (navigation_bot) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.903330] (navigation_bot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:25:24:\x1b[m\x1b[K \x1b[31m\x1b[Kerror: \x1b[m\x1b[Kcall to non-\xe2\x80\x98\x1b[01m\x1b[Kconstexpr\x1b[m\x1b[K\xe2\x80\x99 function \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::namedWindow(const String&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.903398] (navigation_bot) StderrLine: {'line': b'   25 |         \x1b[31m\x1b[Kcv::namedWindow("Image", cv::WINDOW_NORMAL)\x1b[m\x1b[K;\n'}
+[3.903461] (navigation_bot) StderrLine: {'line': b'      |         \x1b[31m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.903532] (navigation_bot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:68\x1b[m\x1b[K,\n'}
+[3.903597] (navigation_bot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:10\x1b[m\x1b[K:\n'}
+[3.903661] (navigation_bot) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/highgui.hpp:316:19:\x1b[m\x1b[K \x1b[36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid cv::namedWindow(const String&, int)\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.903725] (navigation_bot) StderrLine: {'line': b'  316 | CV_EXPORTS_W void \x1b[36m\x1b[KnamedWindow\x1b[m\x1b[K(const String& winname, int flags = WINDOW_AUTOSIZE);\n'}
+[3.903790] (navigation_bot) StderrLine: {'line': b'      |                   \x1b[36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.903854] (navigation_bot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:23:22:\x1b[m\x1b[K \x1b[31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.903919] (navigation_bot) StderrLine: {'line': b'   23 |         publisher_ = \x1b[31m\x1b[Kcreate_publisher<\x1b[m\x1b[K\n'}
+[3.903981] (navigation_bot) StderrLine: {'line': b'      |                      \x1b[31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.904043] (navigation_bot) StderrLine: {'line': b'   24 | \x1b[31m\x1b[K        //Initialize OpenCV window\x1b[m\x1b[K\n'}
+[3.904105] (navigation_bot) StderrLine: {'line': b'      |         \x1b[31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.904168] (navigation_bot) StderrLine: {'line': b'   25 | \x1b[31m\x1b[K        cv::namedWindow("Image", cv::WINDOW_NORMAL)\x1b[m\x1b[K;\n'}
+[3.904231] (navigation_bot) StderrLine: {'line': b'      |         \x1b[31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.910970] (-) TimerEvent: {}
+[4.011296] (-) TimerEvent: {}
+[4.111594] (-) TimerEvent: {}
+[4.211882] (-) TimerEvent: {}
+[4.312160] (-) TimerEvent: {}
+[4.412435] (-) TimerEvent: {}
+[4.512717] (-) TimerEvent: {}
+[4.612993] (-) TimerEvent: {}
+[4.713297] (-) TimerEvent: {}
+[4.813593] (-) TimerEvent: {}
+[4.913875] (-) TimerEvent: {}
+[5.014189] (-) TimerEvent: {}
+[5.114521] (-) TimerEvent: {}
+[5.214823] (-) TimerEvent: {}
+[5.315089] (-) TimerEvent: {}
+[5.415365] (-) TimerEvent: {}
+[5.515639] (-) TimerEvent: {}
+[5.615934] (-) TimerEvent: {}
+[5.716208] (-) TimerEvent: {}
+[5.816478] (-) TimerEvent: {}
+[5.916758] (-) TimerEvent: {}
+[6.017025] (-) TimerEvent: {}
+[6.117309] (-) TimerEvent: {}
+[6.217589] (-) TimerEvent: {}
+[6.317886] (-) TimerEvent: {}
+[6.418168] (-) TimerEvent: {}
+[6.518461] (-) TimerEvent: {}
+[6.618726] (-) TimerEvent: {}
+[6.718986] (-) TimerEvent: {}
+[6.819250] (-) TimerEvent: {}
+[6.919520] (-) TimerEvent: {}
+[6.967436] (navigation_bot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ImageCapture.dir/build.make:76: CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o] Error 1\n'}
+[6.967885] (navigation_bot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/ImageCapture.dir/all] Error 2\n'}
+[6.967978] (navigation_bot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.971004] (navigation_bot) CommandEnded: {'returncode': 2}
+[7.019660] (-) TimerEvent: {}
+[7.120213] (-) TimerEvent: {}
+[7.128766] (navigation_bot) JobEnded: {'identifier': 'navigation_bot', 'rc': 2}
+[7.139295] (-) EventReactorShutdown: {}

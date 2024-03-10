@@ -197,6 +197,43 @@ navigation_bot_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_bot_uninstall.dir/build.make CMakeFiles/navigation_bot_uninstall.dir/build
 .PHONY : navigation_bot_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named ImageCapture
+
+# Build rule for target.
+ImageCapture: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImageCapture
+.PHONY : ImageCapture
+
+# fast build rule for target.
+ImageCapture/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/build
+.PHONY : ImageCapture/fast
+
+Executables/ImageCapture.o: Executables/ImageCapture.cpp.o
+.PHONY : Executables/ImageCapture.o
+
+# target to build an object file
+Executables/ImageCapture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o
+.PHONY : Executables/ImageCapture.cpp.o
+
+Executables/ImageCapture.i: Executables/ImageCapture.cpp.i
+.PHONY : Executables/ImageCapture.i
+
+# target to preprocess a source file
+Executables/ImageCapture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.i
+.PHONY : Executables/ImageCapture.cpp.i
+
+Executables/ImageCapture.s: Executables/ImageCapture.cpp.s
+.PHONY : Executables/ImageCapture.s
+
+# target to generate assembly for a file
+Executables/ImageCapture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.s
+.PHONY : Executables/ImageCapture.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... navigation_bot_uninstall"
 	@echo "... uninstall"
+	@echo "... ImageCapture"
+	@echo "... Executables/ImageCapture.o"
+	@echo "... Executables/ImageCapture.i"
+	@echo "... Executables/ImageCapture.s"
 .PHONY : help
 
 

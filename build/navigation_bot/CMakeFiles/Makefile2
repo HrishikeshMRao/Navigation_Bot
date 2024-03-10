@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/ImageCapture.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/navigation_bot_uninstall.dir/clean
+clean: CMakeFiles/ImageCapture.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ navigation_bot_uninstall: CMakeFiles/navigation_bot_uninstall.dir/rule
 CMakeFiles/navigation_bot_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_bot_uninstall.dir/build.make CMakeFiles/navigation_bot_uninstall.dir/clean
 .PHONY : CMakeFiles/navigation_bot_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ImageCapture.dir
+
+# All Build rule for target.
+CMakeFiles/ImageCapture.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles --progress-num=1,2 "Built target ImageCapture"
+.PHONY : CMakeFiles/ImageCapture.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ImageCapture.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ImageCapture.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles 0
+.PHONY : CMakeFiles/ImageCapture.dir/rule
+
+# Convenience name for target.
+ImageCapture: CMakeFiles/ImageCapture.dir/rule
+.PHONY : ImageCapture
+
+# clean rule for target.
+CMakeFiles/ImageCapture.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageCapture.dir/build.make CMakeFiles/ImageCapture.dir/clean
+.PHONY : CMakeFiles/ImageCapture.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

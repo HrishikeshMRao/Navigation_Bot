@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240223-1144-Experimental"
+	Name="fiend-Lenovo-Yoga-C740-14IML"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="fiend-Lenovo-Yoga-C740-14IML"
+	OSRelease="6.5.0-18-generic"
+	OSVersion="#18~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb  7 11:40:03 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="6144"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="7636"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1599.99"
+	>
+	<Testing>
+		<StartDateTime>Feb 23 17:14 IST</StartDateTime>
+		<StartTestTime>1708688698</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 23 17:14 IST</EndDateTime>
+		<EndTestTime>1708688698</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

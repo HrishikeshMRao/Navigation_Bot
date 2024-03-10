@@ -1,0 +1,261 @@
+[0.000000] (-) TimerEvent: {}
+[0.000221] (navigation_bot) JobQueued: {'identifier': 'navigation_bot', 'dependencies': OrderedDict()}
+[0.000310] (navigation_bot) JobStarted: {'identifier': 'navigation_bot'}
+[0.098335] (-) TimerEvent: {}
+[0.199134] (-) TimerEvent: {}
+[0.299961] (-) TimerEvent: {}
+[0.326116] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'cmake'}
+[0.327759] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'build'}
+[0.329333] (navigation_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', '--', '-j8', '-l8'], 'cwd': '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'fiend'), ('STARSHIP_SHELL', 'bash'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fiend'), ('OLDPWD', '/home/fiend/Navigation_Bot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\n\\[\x1b[38;5;156m\\]\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]dev_ws\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]\\[\x1b[0m\\] on \\[\x1b[38;5;162m\\]\ue0a0 \\[\x1b[0m\\]\\[\x1b[38;5;162m\\]main\\[\x1b[0m\\]\n\\[\x1b[1;38;5;166m\\]➜\\[\x1b[0m\\]'), ('MANAGERPID', '865'), ('SYSTEMD_EXEC_PID', '1038'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5627'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fiend/voice_grab/ros2_ws/install:/home/fiend/Navigation_Bot/dev_ws/install:/home/fiend/LineFollowingRobot/ros_ws/install:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fiend'), ('JOURNAL_STREAM', '8:30767'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fiend'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/fiend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/fiend-Lenovo-Yoga-C740-14IML:@/tmp/.ICE-unix/1008,unix/fiend-Lenovo-Yoga-C740-14IML:/tmp/.ICE-unix/1008'), ('INVOCATION_ID', '37512f0c72ec48d79a8a8f1894f11f4d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UJJAK2'), ('LS_COLORS', 'di=34:ow=34:tw=34:fi=13:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.c=92:*.py=93:*.h=90:*.txt=94:*.doc=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.cpp=92:*.sh=92:*.html=96:*.zip=4;33:*.tar.gz=4;33:*.mp4=105:*.mp3=106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:de10c5cb-7f42-4ea2-ad3f-7446c017e8fd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GCC_COLORS', 'error=31:warning=35:note=36:caret=32:locus=01:quote=01'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/fiend/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('STARSHIP_SESSION_KEY', '2059017139146452'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.400081] (-) TimerEvent: {}
+[0.446919] (navigation_bot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ImageCapture\x1b[0m\n'}
+[0.492002] (navigation_bot) StdoutLine: {'line': b'[ 83%] Built target webcam_publisher\n'}
+[0.492450] (navigation_bot) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o\x1b[0m\n'}
+[0.492699] (navigation_bot) StdoutLine: {'line': b'[ 83%] Built target cv_bridge_test\n'}
+[0.500199] (-) TimerEvent: {}
+[0.600558] (-) TimerEvent: {}
+[0.700919] (-) TimerEvent: {}
+[0.801279] (-) TimerEvent: {}
+[0.901635] (-) TimerEvent: {}
+[1.002022] (-) TimerEvent: {}
+[1.102382] (-) TimerEvent: {}
+[1.202741] (-) TimerEvent: {}
+[1.303106] (-) TimerEvent: {}
+[1.403470] (-) TimerEvent: {}
+[1.503840] (-) TimerEvent: {}
+[1.604262] (-) TimerEvent: {}
+[1.704645] (-) TimerEvent: {}
+[1.805009] (-) TimerEvent: {}
+[1.905381] (-) TimerEvent: {}
+[2.005750] (-) TimerEvent: {}
+[2.106157] (-) TimerEvent: {}
+[2.206530] (-) TimerEvent: {}
+[2.306911] (-) TimerEvent: {}
+[2.407291] (-) TimerEvent: {}
+[2.507692] (-) TimerEvent: {}
+[2.608076] (-) TimerEvent: {}
+[2.708452] (-) TimerEvent: {}
+[2.808827] (-) TimerEvent: {}
+[2.909214] (-) TimerEvent: {}
+[3.009582] (-) TimerEvent: {}
+[3.109955] (-) TimerEvent: {}
+[3.210323] (-) TimerEvent: {}
+[3.310690] (-) TimerEvent: {}
+[3.411061] (-) TimerEvent: {}
+[3.511424] (-) TimerEvent: {}
+[3.611801] (-) TimerEvent: {}
+[3.712213] (-) TimerEvent: {}
+[3.812594] (-) TimerEvent: {}
+[3.912988] (-) TimerEvent: {}
+[4.013347] (-) TimerEvent: {}
+[4.113711] (-) TimerEvent: {}
+[4.214087] (-) TimerEvent: {}
+[4.314545] (-) TimerEvent: {}
+[4.414904] (-) TimerEvent: {}
+[4.515265] (-) TimerEvent: {}
+[4.615625] (-) TimerEvent: {}
+[4.716048] (-) TimerEvent: {}
+[4.816426] (-) TimerEvent: {}
+[4.916796] (-) TimerEvent: {}
+[5.017160] (-) TimerEvent: {}
+[5.117526] (-) TimerEvent: {}
+[5.217891] (-) TimerEvent: {}
+[5.318256] (-) TimerEvent: {}
+[5.418619] (-) TimerEvent: {}
+[5.518977] (-) TimerEvent: {}
+[5.619350] (-) TimerEvent: {}
+[5.719716] (-) TimerEvent: {}
+[5.820092] (-) TimerEvent: {}
+[5.920455] (-) TimerEvent: {}
+[6.020821] (-) TimerEvent: {}
+[6.121201] (-) TimerEvent: {}
+[6.221565] (-) TimerEvent: {}
+[6.321929] (-) TimerEvent: {}
+[6.422294] (-) TimerEvent: {}
+[6.522662] (-) TimerEvent: {}
+[6.623069] (-) TimerEvent: {}
+[6.723446] (-) TimerEvent: {}
+[6.823812] (-) TimerEvent: {}
+[6.924184] (-) TimerEvent: {}
+[7.024549] (-) TimerEvent: {}
+[7.124918] (-) TimerEvent: {}
+[7.225310] (-) TimerEvent: {}
+[7.325707] (-) TimerEvent: {}
+[7.426096] (-) TimerEvent: {}
+[7.526502] (-) TimerEvent: {}
+[7.626864] (-) TimerEvent: {}
+[7.727235] (-) TimerEvent: {}
+[7.827598] (-) TimerEvent: {}
+[7.927974] (-) TimerEvent: {}
+[8.028344] (-) TimerEvent: {}
+[8.128719] (-) TimerEvent: {}
+[8.229086] (-) TimerEvent: {}
+[8.329455] (-) TimerEvent: {}
+[8.429869] (-) TimerEvent: {}
+[8.530268] (-) TimerEvent: {}
+[8.630629] (-) TimerEvent: {}
+[8.730993] (-) TimerEvent: {}
+[8.831370] (-) TimerEvent: {}
+[8.931740] (-) TimerEvent: {}
+[9.032077] (-) TimerEvent: {}
+[9.132438] (-) TimerEvent: {}
+[9.232808] (-) TimerEvent: {}
+[9.333175] (-) TimerEvent: {}
+[9.433543] (-) TimerEvent: {}
+[9.533917] (-) TimerEvent: {}
+[9.634285] (-) TimerEvent: {}
+[9.734660] (-) TimerEvent: {}
+[9.835032] (-) TimerEvent: {}
+[9.935406] (-) TimerEvent: {}
+[10.035769] (-) TimerEvent: {}
+[10.136154] (-) TimerEvent: {}
+[10.236538] (-) TimerEvent: {}
+[10.336912] (-) TimerEvent: {}
+[10.437281] (-) TimerEvent: {}
+[10.537685] (-) TimerEvent: {}
+[10.638044] (-) TimerEvent: {}
+[10.738409] (-) TimerEvent: {}
+[10.838791] (-) TimerEvent: {}
+[10.939168] (-) TimerEvent: {}
+[11.039532] (-) TimerEvent: {}
+[11.139896] (-) TimerEvent: {}
+[11.240269] (-) TimerEvent: {}
+[11.340633] (-) TimerEvent: {}
+[11.441017] (-) TimerEvent: {}
+[11.541408] (-) TimerEvent: {}
+[11.641779] (-) TimerEvent: {}
+[11.742151] (-) TimerEvent: {}
+[11.842515] (-) TimerEvent: {}
+[11.942876] (-) TimerEvent: {}
+[12.043239] (-) TimerEvent: {}
+[12.143599] (-) TimerEvent: {}
+[12.243965] (-) TimerEvent: {}
+[12.344336] (-) TimerEvent: {}
+[12.444697] (-) TimerEvent: {}
+[12.545063] (-) TimerEvent: {}
+[12.645428] (-) TimerEvent: {}
+[12.745810] (-) TimerEvent: {}
+[12.846168] (-) TimerEvent: {}
+[12.946526] (-) TimerEvent: {}
+[13.046884] (-) TimerEvent: {}
+[13.147247] (-) TimerEvent: {}
+[13.247624] (-) TimerEvent: {}
+[13.348061] (-) TimerEvent: {}
+[13.448413] (-) TimerEvent: {}
+[13.548765] (-) TimerEvent: {}
+[13.649134] (-) TimerEvent: {}
+[13.749576] (-) TimerEvent: {}
+[13.850043] (-) TimerEvent: {}
+[13.950429] (-) TimerEvent: {}
+[14.050787] (-) TimerEvent: {}
+[14.151148] (-) TimerEvent: {}
+[14.251514] (-) TimerEvent: {}
+[14.351869] (-) TimerEvent: {}
+[14.452244] (-) TimerEvent: {}
+[14.552603] (-) TimerEvent: {}
+[14.652965] (-) TimerEvent: {}
+[14.753322] (-) TimerEvent: {}
+[14.853681] (-) TimerEvent: {}
+[14.954042] (-) TimerEvent: {}
+[15.054401] (-) TimerEvent: {}
+[15.154780] (-) TimerEvent: {}
+[15.255141] (-) TimerEvent: {}
+[15.355519] (-) TimerEvent: {}
+[15.455922] (-) TimerEvent: {}
+[15.556304] (-) TimerEvent: {}
+[15.656677] (-) TimerEvent: {}
+[15.757043] (-) TimerEvent: {}
+[15.857407] (-) TimerEvent: {}
+[15.957773] (-) TimerEvent: {}
+[16.058163] (-) TimerEvent: {}
+[16.158532] (-) TimerEvent: {}
+[16.258912] (-) TimerEvent: {}
+[16.359267] (-) TimerEvent: {}
+[16.459661] (-) TimerEvent: {}
+[16.560033] (-) TimerEvent: {}
+[16.660392] (-) TimerEvent: {}
+[16.760751] (-) TimerEvent: {}
+[16.861107] (-) TimerEvent: {}
+[16.961509] (-) TimerEvent: {}
+[17.061882] (-) TimerEvent: {}
+[17.162237] (-) TimerEvent: {}
+[17.262603] (-) TimerEvent: {}
+[17.362957] (-) TimerEvent: {}
+[17.463315] (-) TimerEvent: {}
+[17.563670] (-) TimerEvent: {}
+[17.664035] (-) TimerEvent: {}
+[17.764415] (-) TimerEvent: {}
+[17.864770] (-) TimerEvent: {}
+[17.965126] (-) TimerEvent: {}
+[18.065484] (-) TimerEvent: {}
+[18.165846] (-) TimerEvent: {}
+[18.266209] (-) TimerEvent: {}
+[18.366577] (-) TimerEvent: {}
+[18.466937] (-) TimerEvent: {}
+[18.567314] (-) TimerEvent: {}
+[18.667681] (-) TimerEvent: {}
+[18.768052] (-) TimerEvent: {}
+[18.868411] (-) TimerEvent: {}
+[18.968780] (-) TimerEvent: {}
+[19.069166] (-) TimerEvent: {}
+[19.169535] (-) TimerEvent: {}
+[19.269953] (-) TimerEvent: {}
+[19.273592] (navigation_bot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ImageCapture\x1b[0m\n'}
+[19.370084] (-) TimerEvent: {}
+[19.470464] (-) TimerEvent: {}
+[19.570846] (-) TimerEvent: {}
+[19.671264] (-) TimerEvent: {}
+[19.771692] (-) TimerEvent: {}
+[19.872066] (-) TimerEvent: {}
+[19.972453] (-) TimerEvent: {}
+[20.072815] (-) TimerEvent: {}
+[20.173172] (-) TimerEvent: {}
+[20.231551] (navigation_bot) StdoutLine: {'line': b'[100%] Built target ImageCapture\n'}
+[20.249762] (navigation_bot) CommandEnded: {'returncode': 0}
+[20.273285] (-) TimerEvent: {}
+[20.299036] (navigation_bot) JobProgress: {'identifier': 'navigation_bot', 'progress': 'install'}
+[20.315363] (navigation_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot'], 'cwd': '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'fiend'), ('STARSHIP_SHELL', 'bash'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fiend'), ('OLDPWD', '/home/fiend/Navigation_Bot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\n\\[\x1b[38;5;156m\\]\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]dev_ws\\[\x1b[0m\\]\\[\x1b[38;5;166m\\]\\[\x1b[0m\\] on \\[\x1b[38;5;162m\\]\ue0a0 \\[\x1b[0m\\]\\[\x1b[38;5;162m\\]main\\[\x1b[0m\\]\n\\[\x1b[1;38;5;166m\\]➜\\[\x1b[0m\\]'), ('MANAGERPID', '865'), ('SYSTEMD_EXEC_PID', '1038'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5627'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fiend/voice_grab/ros2_ws/install:/home/fiend/Navigation_Bot/dev_ws/install:/home/fiend/LineFollowingRobot/ros_ws/install:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fiend'), ('JOURNAL_STREAM', '8:30767'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fiend'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/fiend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/fiend-Lenovo-Yoga-C740-14IML:@/tmp/.ICE-unix/1008,unix/fiend-Lenovo-Yoga-C740-14IML:/tmp/.ICE-unix/1008'), ('INVOCATION_ID', '37512f0c72ec48d79a8a8f1894f11f4d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UJJAK2'), ('LS_COLORS', 'di=34:ow=34:tw=34:fi=13:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.c=92:*.py=93:*.h=90:*.txt=94:*.doc=104:*.odt=104:*.csv=102:*.xlsx=102:*.xlsm=102:*.rb=31:*.cpp=92:*.sh=92:*.html=96:*.zip=4;33:*.tar.gz=4;33:*.mp4=105:*.mp3=106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:de10c5cb-7f42-4ea2-ad3f-7446c017e8fd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GCC_COLORS', 'error=31:warning=35:note=36:caret=32:locus=01:quote=01'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/fiend/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('STARSHIP_SESSION_KEY', '2059017139146452'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot:/home/fiend/LineFollowingRobot/ros_ws/install/line_bhakt:/home/fiend/ROS/practice_codes_ROS2/articubot_one/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[20.329374] (navigation_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.330609] (navigation_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.331885] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/config/empty.yaml\n'}
+[20.332228] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/config/my_controller.yaml\n'}
+[20.333181] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/Depth_camera.xacro\n'}
+[20.333516] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/camera.xacro\n'}
+[20.333857] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/gazebo_control.xacro\n'}
+[20.334177] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/inertial_macros.xacro\n'}
+[20.334496] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/lidar.xacro\n'}
+[20.334818] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/robot.urdf.xacro\n'}
+[20.335068] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/robot_core.xacro\n'}
+[20.335507] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/description/ros2_control.xacro\n'}
+[20.336328] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/launch/launch_sim.launch.py\n'}
+[20.336589] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/launch/rsp.launch.py\n'}
+[20.337787] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/empty.world\n'}
+[20.338176] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/home.world\n'}
+[20.338381] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/obstacle.world\n'}
+[20.338645] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/track.world\n'}
+[20.338916] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/worlds/turtleWorld.world\n'}
+[20.339614] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/navigation_bot/ImageCapture\n'}
+[20.340141] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/navigation_bot/webcam_publisher\n'}
+[20.340658] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/lib/navigation_bot/cv_bridge_test\n'}
+[20.341067] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/package_run_dependencies/navigation_bot\n'}
+[20.341690] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/parent_prefix_path/navigation_bot\n'}
+[20.342190] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/ament_prefix_path.sh\n'}
+[20.342528] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/ament_prefix_path.dsv\n'}
+[20.342984] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/path.sh\n'}
+[20.343291] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/environment/path.dsv\n'}
+[20.343706] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.bash\n'}
+[20.344106] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.sh\n'}
+[20.344577] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.zsh\n'}
+[20.344895] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/local_setup.dsv\n'}
+[20.345265] (navigation_bot) StdoutLine: {'line': b'-- Symlinking: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.dsv\n'}
+[20.360751] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/ament_index/resource_index/packages/navigation_bot\n'}
+[20.361264] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/cmake/navigation_botConfig.cmake\n'}
+[20.361604] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/cmake/navigation_botConfig-version.cmake\n'}
+[20.361925] (navigation_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fiend/Navigation_Bot/dev_ws/install/navigation_bot/share/navigation_bot/package.xml\n'}
+[20.365719] (navigation_bot) CommandEnded: {'returncode': 0}
+[20.373387] (-) TimerEvent: {}
+[20.473813] (-) TimerEvent: {}
+[20.574509] (-) TimerEvent: {}
+[20.674840] (-) TimerEvent: {}
+[20.734352] (navigation_bot) JobEnded: {'identifier': 'navigation_bot', 'rc': 0}
+[20.735519] (-) EventReactorShutdown: {}

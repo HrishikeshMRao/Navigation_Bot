@@ -1,0 +1,14 @@
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/WebCam.cpp:9:10:[m[K [31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+    9 | #include [31m[K<cv_bridge/cv_bridge.h>[m[K
+      |          [31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/fiend/Navigation_Bot/dev_ws/src/Executables/ImageCapture.cpp:9:10:[m[K [31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+    9 | #include [31m[K<cv_bridge/cv_bridge.h>[m[K
+      |          [31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/webcam_publisher.dir/build.make:76: CMakeFiles/webcam_publisher.dir/Executables/WebCam.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/ImageCapture.dir/build.make:76: CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/webcam_publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ImageCapture.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

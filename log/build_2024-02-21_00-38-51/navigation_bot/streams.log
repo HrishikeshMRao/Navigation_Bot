@@ -1,0 +1,42 @@
+[0.234s] Invoking command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fiend/cv_bridge/install/opencv_tests:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake /home/fiend/Navigation_Bot/dev_ws/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot
+[0.261s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.571s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.652s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.659s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.673s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.698s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.732s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.871s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.875s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.138s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.529s] -- Found cv_bridge: 3.4.0 (/usr/local/share/cv_bridge/cmake)
+[1.871s] [31mCMake Error at /usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake:79 (message):
+[1.871s]   The imported target "cv_bridge::cv_bridge" references the file
+[1.871s] 
+[1.872s]      "/usr/local/lib/libcv_bridge.so"
+[1.872s] 
+[1.872s]   but this file does not exist.  Possible reasons include:
+[1.872s] 
+[1.872s]   * The file was deleted, renamed, or moved to another location.
+[1.872s] 
+[1.872s]   * An install or uninstall procedure did not complete successfully.
+[1.873s] 
+[1.873s]   * The installation package was faulty and contained
+[1.873s] 
+[1.873s]      "/usr/local/share/cv_bridge/cmake/export_cv_bridgeExport.cmake"
+[1.873s] 
+[1.873s]   but not all the files it references.
+[1.873s] 
+[1.873s] Call Stack (most recent call first):
+[1.874s]   /usr/local/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake:9 (include)
+[1.874s]   /usr/local/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)
+[1.874s]   CMakeLists.txt:20 (find_package)
+[1.874s] 
+[1.874s] [0m
+[1.874s] -- Configuring incomplete, errors occurred!
+[1.874s] See also "/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/CMakeOutput.log".
+[1.887s] Invoked command in '/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fiend/cv_bridge/install/opencv_tests:/opt/ros/humble PS1=
+\[[38;5;156m\]\[[0m\]\[[38;5;166m\]dev_ws\[[0m\]\[[38;5;166m\]\[[0m\] on \[[38;5;162m\] \[[0m\]\[[38;5;162m\]main\[[0m\]
+\[[1;38;5;166m\]➜\[[0m\] /usr/bin/cmake /home/fiend/Navigation_Bot/dev_ws/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fiend/Navigation_Bot/dev_ws/install/navigation_bot

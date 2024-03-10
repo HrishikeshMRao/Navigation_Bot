@@ -1,5 +1,6 @@
 /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/uninstall.dir
 /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/navigation_bot_uninstall.dir
+/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/ImageCapture.dir
 /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/test.dir
 /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/edit_cache.dir
 /home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/CMakeFiles/rebuild_cache.dir

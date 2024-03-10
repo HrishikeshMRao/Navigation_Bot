@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/navigation_bot")
 ament_cmake_symlink_install_directory("/home/fiend/Navigation_Bot/dev_ws/src" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/navigation_bot")
 
+# install("TARGETS" "ImageCapture" "DESTINATION" "lib/navigation_bot")
+include("/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/fiend/Navigation_Bot/dev_ws/src" FILES "/home/fiend/Navigation_Bot/dev_ws/build/navigation_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

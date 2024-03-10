@@ -1,1 +1,0 @@
-/home/fiend/Navigation_Bot/dev_ws/src/launch/rplidar.launch.py

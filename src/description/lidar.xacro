@@ -1,11 +1,34 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <link name="platform">
+        <visual>
+            <geometry>
+                <box size="0.15 0.3 0.075"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.15 0.15 0.075"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="0.3" y="0.3" z="0.15">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box> 
+    </link>    
+
+
+    <joint name="laser_platform" type="fixed"> 
+        <parent link="base_link"/>
+        <child link="platform"/>
+        <origin xyz="0 0 0.112" rpy="0 0 0"/>     
+    </joint>
 
     <joint name="laser_joint" type="fixed"> 
-        <parent link="chassis"/>
+        <parent link="platform"/>
         <child link="laser_frame"/>
-        <origin xyz="0.1 0 0.175" rpy="0 0 0"/>     
+        <origin xyz="0 0 0.057" rpy="0 0 0"/>     
     </joint>
 
     <link name="laser_frame">
