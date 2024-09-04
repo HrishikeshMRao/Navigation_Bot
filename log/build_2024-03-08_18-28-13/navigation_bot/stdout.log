@@ -1,3 +1,0 @@
-[ 83%] Built target webcam_publisher
-[ 83%] [32mBuilding CXX object CMakeFiles/ImageCapture.dir/Executables/ImageCapture.cpp.o[0m
-[ 83%] Built target cv_bridge_test
