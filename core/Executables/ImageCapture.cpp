@@ -99,9 +99,7 @@ class ImageCapture : public rclcpp::Node {
   double yaw_deg, present_yaw, GPSx, GPSy;
   void opencv_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
     try {
-      for (int dir : direction) {
-        RCLCPP_INFO(this->get_logger(), "direction: %d", dir);
-      }
+
       // Convert ROS image message to OpenCV image
       cv_bridge::CvImagePtr cv_ptr =
           cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
