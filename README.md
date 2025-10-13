@@ -26,9 +26,11 @@ patience to keep reading further if i find the project interesting.
 
 So here are two videos sped up by a factor of "x3".
 
-The first video is of maze image 2:
+The first video is of maze image [5](Navigation_Bot/worlds/material/texture/5.png):
+![](Demo5.gif)
 
-Next its the maze image 11:
+Next its the maze image [12](Navigation_Bot/worlds/material/texture/12.png):
+![](Demo12.gif)
 
 You can try more examples (1000 mazes to be precise generated through "" Algorithm)
 
