@@ -28,7 +28,7 @@ def generate_launch_description():
     )
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
-    texture_name = "12"  # <--- CHANGE ME to change maze 0 to 100
+    texture_name = "12"  # <--- CHANGE ME to change maze 0 to 1000
 
     world_path = os.path.join(
         get_package_share_directory(package_name), "worlds", "empty.world"
