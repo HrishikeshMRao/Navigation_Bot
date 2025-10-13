@@ -1,0 +1,23 @@
+material Maze/diffuse
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+           lighting off            // disables light shading
+           depth_write off         // prevents z-fighting with plane
+           ambient 1 1 1           // full brightness
+           diffuse 1 1 1           // no color tint
+           emissive 1 1 1          // self-lit (glows)
+           specular 0 0 0 0        // no shininess
+
+            texture_unit
+            {
+                texture 12.png
+                filtering anisotropic
+                max_anisotropy 16
+            }
+        }
+    }
+}
