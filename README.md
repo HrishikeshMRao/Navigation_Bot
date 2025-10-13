@@ -313,7 +313,7 @@ Publishes to:
 - "diff_cont/cmd_vel_unstamped"
 - "camera/image"
 
-##### OpenCV Implementation
+#### OpenCV Implementation
 
 Ros2 documentation for OpenCV provides a bridge for interpreting /camera/image as
 OpenCV image matrix.
@@ -321,16 +321,16 @@ OpenCV image matrix.
 This is done easily in 1 line:
 
 ```cpp
-   // Convert ROS image message to OpenCV image
-      cv_bridge::CvImagePtr cv_ptr =
-          cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-      image = cv_ptr->image;
+// Convert ROS image message to OpenCV image
+cv_bridge::CvImagePtr cv_ptr =
+    cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+image = cv_ptr->image;
 ```
 
 A callback is generated for each frame received through /camera/image_raw. for efficient
 processing.
 
-##### Corner detection Algorithm
+#### Corner detection Algorithm
 
 Basically this idea stems from a [post on stack overflow](https://stackoverflow.com/questions/59383119/how-to-approximate-jagged-edges-as-lines-using-python-opencv)
 The key idea is to :
@@ -345,10 +345,242 @@ The key idea is to :
   image. in this case (polygon 0.5% perimeter of the contour)
 - Run Shi-Tomasi Corner Detector i.e. goodFeaturesToTrack() function.
 
+Following is a code snippet documenting the fine tuned parameter values of
+goodFeaturesToTrack for the project's use case:
+
+```cpp
+cv::goodFeaturesToTrack(
+    mask, corners,
+    4,   // maxCorners – increase for more detections
+    0.4, // qualityLevel – smaller detects weaker corners
+    170  // minDistance – minimum pixel spacing between corners
+);
+```
+
 This function is preffered over harris corner detection for its speed. and the
 ability to pin point the pixel coordinates of these corers. It is also possible
 to adjust the sensitivity distance and neighbours making it highly customisable.
 
-##### Decision Making
+---
 
+#### Decision Making
 
+Finite state machines are employed for the purpose of carrying out tasks sequentially.
+This allows for the program to run without loops or stalling the callback.
+
+Two Enums are in play.
+
+---
+
+Enum: _State_
+Has Commands representing the current state of the bot:
+
+- SEARCH
+- ALIGN_CENTRE
+- TURN
+
+  Enum: _Shape_
+  Depicts the action the bot has to take at a junction/corner.
+
+  - LEFT
+  - RIGHT
+  - STRAIGHT
+
+- MOVE_FORWARD
+
+---
+
+The flow chart attached summarises the entire code structure:
+![](Navigation_bot_Flow.png)
+Tool Courtesy: draw.io
+
+---
+
+#### Shape detection
+
+The flow chart provides a quick glimpse of how the shapes were identified.
+
+##### LEFT and RIGHT
+
+Given, the first 2 points identified are corners[0] and corners[1].
+
+Within the ALIGN_CENTER state, after checking if the centres have aligned within
+the buffer of 0.001. We check two conditions i.e.:
+
+```cpp
+if ((std::abs(midX - corners[0].x) > 5) &&
+              (std::abs(midY - corners[0].y) > 5))
+```
+
+These two conditions imply a T junction if true.(A Cross is identified as a
+T junction as soon as its first two points are observed)
+
+Below Image illustrates the idea of a T junction.
+![](Junction.jpeg)
+
+Keeping in mind the x and y pixel coordinates are maximum towards the left corner
+of the image. Here is an illustarion for the reason of comparing topx with midx
+for decision making on the turns.
+![](Turn.jpeg)
+
+---
+
+#### PD Controller
+
+Lets address the elephant in the room. Why i havent chosen PID controller nearly a
+gold standard for feedback control in robotics industry for this project.
+
+- I did not face overshoot issue too often.
+- I did not want to risk oscillation in my system
+- Very hectic to tune Ki value compared to others.
+
+Here is a structure of my PID controller:
+
+```cpp
+struct PIDController {
+ public:
+  PIDController(double kp, double kd)
+      : kp_(kp), kd_(kd), previous_error_(0.0) {}
+
+  double compute(double setpoint, double pv) {
+    double error = setpoint - pv;
+    double derivative = error - previous_error_;
+    previous_error_ = error;
+    return kp_ * error + kd_ * derivative;
+  }
+
+ private:
+  double kp_;
+  double kd_;
+  double previous_error_;
+};
+```
+
+Kp -> 0.0007
+Kd -> 0.0001
+was found to be just right. A balance between speed and task completion without
+oscillation.
+
+Due to floating point errors it was sought to be a good practice to provide a buffer
+instead of hard equality checks in if conditions as below.
+
+```cpp
+if (std::abs(error) < 0.001)
+```
+
+---
+
+#### IMU Normalisation and quaternion to euler conversion
+
+This was fairly new for me to convert one form of angle representation to another.
+It was much easier to tune the angular.z pd value through yaw angles rather than
+position of corners.
+
+An initial idea was planned to estimate an angle of rotation based on the diagonal
+corners on a turn. By measuring their slope we can tune the pd controller to
+align the corner points to their mirror about the x axis.
+
+This worked well for the corners. But there was no assymetry on the T and cross junctions
+to identify left or right turn. Hence an IMU was forced to provide accurate yaw
+measurements that can directly be utilised.
+
+Normalisation of the angles was another important step.
+
+- The bot used to keep spinning in certain turns/junctions.
+- This was a consequence of the line: (present_yaw+-90)
+
+On the first glance the idea seemd fine but consider present_yaw to be
+90.02 and by adding 90.0 the desired angle is past 180. This is a problem as the
+quaternion to euler wraps the angles after 180 to -180. So we mimic the same with
+present_yaw:
+
+```cpp
+auto normalize_angle = [](double angle) {
+  while (angle > 180.0)
+    angle -= 360.0;
+  while (angle < -180.0)
+    angle += 360.0;
+  return angle;
+};
+```
+
+---
+
+#### Astar.cpp
+
+The spanning tree generated by the dataset imported from kaggle was the backbone for path
+planning around the maze.
+
+- It came across to me to make the bot backtrack and correct itself.
+- Blind maze where we can potentially make it a heuristic search
+  by approaching those turns that lead you towards the goal rather than away.
+
+Disadvantages of the above approach:
+
+- The solution is time consuming
+- No way to detect if the dead end is a T junction or not
+
+So another potential candidate was RRT(Rapidly Exploring RandomTrees) path solver.
+
+- Sample random points along the maze image
+- check if the point is on a black pixel or a white pixel
+- if white then add it to the nearest node if there exists a euclidean path
+  without any black pixels in between.
+- if not sample another point. Try sampling 10% of the time near the goal.
+
+Disadvantages of this method:
+
+- Requires 10000s of points to be sampled due to white area being smaller
+  hence creating thousands of nodes.
+- Requires GPS coordinates to determine the position of the bot wrt closest node to decide
+  the route henceforth from that junction.
+- why reinvent the wheel when the edge map is available.
+
+Hence an Astar algorithm was employed. Its a replica of my submission on coursera modern robotics
+ported to cpp.
+
+Made sure not to forget including the start and goal positions after the path was returned.
+
+```cpp
+reverse(path.begin(), path.end());
+path.insert(path.begin(), -1);
+path.push_back(100);
+```
+
+The direction determination was basic mathematics using vectors.
+
+- Iterate from the 0th node to N-1 node
+- draw a vector from N-1 to N
+- draw another vector from N-1 to N+1
+- obtained the signed angle between the two vectors
+- if the angle is +ve then it is a left turn
+- if it is -ve a right turn
+- if it is 0 then straight.
+
+```cpp
+cout << "Direction to move at junctions\n";
+vector<int> direction;
+for (int node = 1; node < path.size() - 1; node++) {
+  if (adj[path[node]].size() > 2) {
+    int ax = path[node - 1] % 10, ay = path[node - 1] / 10;
+    int bx = path[node] % 10, by = path[node] / 10;
+    int cx = path[node + 1] % 10, cy = path[node + 1] / 10;
+    pair<int, int> vectorbase = {bx - ax, by - ay};
+    pair<int, int> vectornext = {cx - ax, cy - ay};
+    double signed_angle = atan2(vectornext.second, vectornext.first) -
+                          atan2(vectorbase.second, vectorbase.first);
+    if (signed_angle > 0)
+      direction.push_back(1);
+    else if (signed_angle < 0)
+      direction.push_back(-1);
+    else
+      direction.push_back(0);
+  }
+}
+return direction;
+```
+
+It would be more intuitive is vectors are inspired from the direction the bot is moving
+return the direction vector when called by the ImageCaptureNode in its costructor.
+
+---
